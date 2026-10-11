@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp AI Business Assistant",
+  "description": "AI assistant for small and medium service businesses in India to automate replies, quotations, reminders, and follow-ups directly on WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

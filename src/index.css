@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary-green: #16A34A;
+    --dark-green: #15803D;
+    --wa-accent: #25D366;
+    --bg-main: #FFFFFF;
+    --bg-alt: #F8FAFC;
+    --border-color: #E5E7EB;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+  }
+
+  .dark {
+    --bg-main: #0B1220;
+    --bg-alt: #0F172A;
+    --border-color: #1F2937;
+    --text-primary: #F9FAFB;
+    --text-secondary: #9CA3AF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #16A34A;
+    outline-offset: 2px;
+  }
+}
+
+.wa-pattern-light {
+  background-color: #f0f2f5;
+  background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px), radial-gradient(#cbd5e1 0.75px, #f0f2f5 0.75px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.wa-pattern-dark {
+  background-color: #0b141a;
+  background-image: radial-gradient(#1e293b 0.75px, transparent 0.75px), radial-gradient(#1e293b 0.75px, #0b141a 0.75px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
